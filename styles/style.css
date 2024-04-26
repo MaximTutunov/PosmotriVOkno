@@ -13,9 +13,13 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  /* step 1 */
+  display: flex;
+  justify-content: center; /* ЦЕНТРОВКА ПО ГОРИЗОНТАЛИ */
+  align-items: center; /* ЦЕНТРОВКА ПО ВЕРТИКАЛИ */
 }
 
 h1,
@@ -35,4 +39,34 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+/* step 1 */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 1140px;
+  gap: 30px;
+}
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  /* step 5 */
+  align-items: flex-end;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+}
+.content__list {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 403px;
+  height: 298px;
+  margin-block-start: 26px;
+
+  /* step 3 */
 }
